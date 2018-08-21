@@ -4,11 +4,15 @@
     <title>RailsStupidCoaching</title>
     <%= csrf_meta_tags %>
 
+<!-- add the css file to the app  -->
+
+    <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <h3> Ask Questions to the coach </h3>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,21 @@
+<h1>Pages#answer</h1>
+<p>Find me in app/views/pages/answer.html.erb</p>
+
+
+<blockquote>
+  <p>
+    <% if @question.blank? %>
+          <%= "What is your question?" %>
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  <cite>yOu</cite>
+</blockquote>
+
+<blockquote class="coach">
+  <p><%= @answer%></p>
+  <cite>Your coach</cite>
+</blockquote>
+
+<%= link_to "Ask a new question", ask_path %>
